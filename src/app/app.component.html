@@ -1,0 +1,36 @@
+<h1> Addition of two numbers</h1>
+<div class="add">
+    <form>
+        <table>
+            <tr>
+                <td>Enter number 1</td>
+                <td><input type="number" placeholder=" number 1" #num1></td>
+            </tr>
+            <tr>
+                <td>Enter number 2</td>
+                <td><input type="number" placeholder=" number 2" #num2></td>
+            </tr>
+            <tr>
+               <td ><input type="button" value="Submit" (click)="addNumbers(num1.value,num2.value)"></td>
+            </tr>
+        </table>
+    </form>
+    <h3>Sum of two numbers is {{sum}}</h3>
+</div>
+<div class="product">
+  <table>
+    <tr>
+      <td>Enter a number</td>
+      <td><input type="number" #num></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="Submit" (click)="product(num.value)"></td>
+    </tr>
+    <h3>Resulting Output</h3>
+    <tr>
+   <li *ngFor="let r of res">
+   {{r}}</li>
+    </tr>
+  </table>
+
+</div>
